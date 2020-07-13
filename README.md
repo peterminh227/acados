@@ -71,7 +71,6 @@ Both a CMake and a Makefile based build system are supported at the moment.
 
 * soon: binaries for all operating systems available for download (see Releases)
 Minh's edit
-'''
+```
 cmake.exe -G "MSYS Makefiles" -D BLASFEO_TARGET=GENERIC -D HPIPM_TARGET=GENERIC -D ACADOS_INSTALL_DIR=.. -DBUILD_SHARED_LIBS=OFF -DACADOS_EXAMPLES=OFF -DACADOS_UNIT_TESTS=OFF ..
-
-'''
+```
