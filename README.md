@@ -78,4 +78,12 @@ cmake.exe -G "MSYS Makefiles" -D BLASFEO_TARGET=GENERIC -D HPIPM_TARGET=GENERIC 
 cmake .. -G "MSYS Makefiles" -DBLASFEO_TARGET=GENERIC -DHPIPM_TARGET=GENERIC -DACADOS_INSTALL_DIR=/d/acados-install -DBUILD_SHARED_LIBS=OFF -DACADOS_MATLAB=ON -DACADOS_WITH_OPENMP=ON -DACADOS_NUM_THREADS=16
 ```
 
-
+If I downgrade those two packages to
+```
+mingw-w64-x86_64-crt-git-5.0.0.5002.34a7c1c0-1 \\\
+mingw-w64-x86_64-headers-git-5.0.0.5002.34a7c1c0-1 
+```
+in this link 
+```
+https://repo.msys2.org/mingw/x86_64/
+```
