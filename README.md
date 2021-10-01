@@ -78,7 +78,14 @@ cmake.exe -G "MSYS Makefiles" -D BLASFEO_TARGET=GENERIC -D HPIPM_TARGET=GENERIC 
 cmake .. -G "MSYS Makefiles" -DBLASFEO_TARGET=GENERIC -DHPIPM_TARGET=GENERIC -DACADOS_INSTALL_DIR=/d/acados-install -DBUILD_SHARED_LIBS=OFF -DACADOS_MATLAB=ON -DACADOS_WITH_OPENMP=ON -DACADOS_NUM_THREADS=16
 ```
 
-If I downgrade those two packages to
+Error && fix
+```
+compiling C:\acados\examples\acados_matlab_octave\..\..\interfaces\acados_matlab_octave\ocp_create.c
+Building with 'MinGW64 Compiler (C)'.
+Error using mex
+C:\acados\examples\acados_matlab_octave\..\..\lib\qpOASES_e.lib(MessageHandling.c.obj):MessageHandling.c:(.text+0x93):
+undefined reference to `__imp___acrt_iob_func'
+```
 ```
 mingw-w64-x86_64-crt-git-5.0.0.5002.34a7c1c0-1 \\\
 mingw-w64-x86_64-headers-git-5.0.0.5002.34a7c1c0-1 
